@@ -20,7 +20,8 @@
     "react-native-paper": "^4.5.0",
     "react-native-svg": "12.1.0",
     "react-native-web": "~0.13.12",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "styled-system": "^5.1.5"
   },
   "devDependencies": {
     "@babel/core": "~7.9.0",
