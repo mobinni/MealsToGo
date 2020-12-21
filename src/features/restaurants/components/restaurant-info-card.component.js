@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components/native";
-import { Text, Image, View } from "react-native";
 import { Card } from "react-native-paper";
 import { SvgXml } from "react-native-svg";
 
+import { Text } from "../../../components/typography/text.component";
 import { Spacer } from "../../../components/spacer/spacer.component";
 import star from "../../../../assets/star";
 import open from "../../../../assets/open";
@@ -49,6 +49,11 @@ const SectionEnd = styled.View`
   justify-content: flex-end;
 `;
 
+const Icon = styled.Image`
+  width: 15px;
+  height: 15px;
+`;
+
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
     name = "Some Restaurant",
@@ -77,7 +82,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
           </Rating>
           <SectionEnd>
             {isClosedTemporarily && (
-              <Text variant="label" style={{ color: "red" }}>
+              <Text variant="caption" color="text.error">
                 CLOSED TEMPORARILY
               </Text>
             )}
@@ -85,7 +90,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
               {isOpenNow && <SvgXml xml={open} width={20} height={20} />}
             </Spacer>
             <Spacer variant="left.large">
-              <Image style={{ width: 15, height: 15 }} source={{ uri: icon }} />
+              <Icon source={{ uri: icon }} />
             </Spacer>
           </SectionEnd>
         </Section>
