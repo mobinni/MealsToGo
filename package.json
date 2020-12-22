@@ -12,6 +12,7 @@
     "@expo-google-fonts/lato": "^0.1.0",
     "@expo-google-fonts/oswald": "^0.1.0",
     "@react-native-community/masked-view": "0.1.10",
+    "@react-navigation/bottom-tabs": "^5.11.2",
     "@react-navigation/native": "^5.8.10",
     "expo": "~40.0.0",
     "expo-font": "~8.4.0",
