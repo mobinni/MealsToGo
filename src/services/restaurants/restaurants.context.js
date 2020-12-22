@@ -1,4 +1,10 @@
-import React, { useState, createContext, useEffect, useContext } from "react";
+import React, {
+  useState,
+  createContext,
+  useEffect,
+  useContext,
+  useCallback,
+} from "react";
 
 import {
   restaurantsRequest,
@@ -15,7 +21,7 @@ export const RestaurantsContextProvider = ({ children }) => {
   const [error, setError] = useState(null);
   const { location } = useContext(LocationContext);
 
-  const retrieveRestaurants = () => {
+  const retrieveRestaurants = useCallback(() => {
     setIsLoading(true);
     setTimeout(() => {
       restaurantsRequest(location)
@@ -29,12 +35,11 @@ export const RestaurantsContextProvider = ({ children }) => {
           setError(err);
         });
     }, 2000);
-  };
+  }, [location]);
 
   useEffect(() => {
     retrieveRestaurants();
-    return () => null;
-  }, [location]);
+  }, [retrieveRestaurants]);
 
   return (
     <RestaurantsContext.Provider
