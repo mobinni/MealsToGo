@@ -78,7 +78,7 @@ export default function App() {
               </Tab.Navigator>
             </NavigationContainer>
           </RestaurantsContextProvider>
-        </LocationContextProvider>
+        </LocationContextProvider>  
       </ThemeProvider>
       <ExpoStatusBar style="auto" />
     </>
