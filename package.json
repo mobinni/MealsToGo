@@ -5,6 +5,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
+    "publish-app": "expo publish",
     "eject": "expo eject",
     "lint": "eslint . --ext .js"
   },
