@@ -1,0 +1,58 @@
+Arguments: 
+  /Users/education/.fnm/node-versions/v14.15.3/installation/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js
+
+PATH: 
+  /Users/education/.fnm/current/bin:/Users/education/.nvm/versions/node/v10.16.0/bin:/Users/education/Library/Android/sdk/tools:/Users/education/Library/Android/sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/usr/local/share/dotnet:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/education/.nvm/versions/node/v10.16.0/bin:/Users/education/Library/Android/sdk/tools:/Users/education/Library/Android/sdk/platform-tools:/opt/local/bin:/opt/local/bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  14.15.3
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "functions",
+    "description": "Cloud Functions for Firebase",
+    "scripts": {
+      "serve": "firebase emulators:start --only functions",
+      "shell": "firebase functions:shell",
+      "start": "npm run shell",
+      "deploy": "firebase deploy --only functions",
+      "logs": "firebase functions:log"
+    },
+    "engines": {
+      "node": "12"
+    },
+    "main": "index.js",
+    "dependencies": {
+      "firebase-admin": "^9.2.0",
+      "firebase-functions": "^3.11.0"
+    },
+    "devDependencies": {
+      "firebase-functions-test": "^0.2.0"
+    },
+    "private": true
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Found incompatible module
+      at new MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
+      at Object.checkOne (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:62444:11)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:22773:75
+      at Generator.next (<anonymous>)
+      at step (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:98:30)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:116:14
+      at new Promise (<anonymous>)
+      at new F (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:23451:28)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:95:12
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:22777:27
