@@ -3,6 +3,8 @@ import { host } from "../../utils/env";
 
 export const locationRequest = (searchTerm) => {
   return fetch(`${host}/geocode?city=${searchTerm}`).then((res) => {
+    console.log(res);
+
     return res.json();
   });
 };
