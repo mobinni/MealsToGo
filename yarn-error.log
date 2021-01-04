@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/education/.fnm/node-versions/v14.15.3/installation/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js publish
+  /Users/education/.fnm/node-versions/v14.15.3/installation/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js serve
 
 PATH: 
   /Users/education/.fnm/current/bin:/Users/education/.nvm/versions/node/v10.16.0/bin:/Users/education/Library/Android/sdk/tools:/Users/education/Library/Android/sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/usr/local/share/dotnet:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/education/.nvm/versions/node/v10.16.0/bin:/Users/education/Library/Android/sdk/tools:/Users/education/Library/Android/sdk/platform-tools:/opt/local/bin:/opt/local/bin
@@ -21,7 +21,7 @@ npm manifest:
       "android": "expo start --android",
       "ios": "expo start --ios",
       "web": "expo start --web",
-      "publish": "expo publish",
+      "publish-app": "expo publish",
       "eject": "expo eject",
       "lint": "eslint . --ext .js"
     },
@@ -42,6 +42,7 @@ npm manifest:
       "react": "16.13.1",
       "react-dom": "16.13.1",
       "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
+      "react-native-credit-card-input": "^0.4.1",
       "react-native-gesture-handler": "~1.8.0",
       "react-native-maps": "0.27.1",
       "react-native-paper": "^4.5.0",
@@ -51,6 +52,7 @@ npm manifest:
       "react-native-svg": "12.1.0",
       "react-native-web": "~0.13.12",
       "react-native-webview": "11.0.0",
+      "stripe-client": "^1.1.5",
       "styled-components": "^5.2.1"
     },
     "devDependencies": {
@@ -58,7 +60,8 @@ npm manifest:
       "@react-native-community/eslint-config": "^2.0.0",
       "eslint": "^7.16.0",
       "prettier": "^2.2.1"
-    }
+    },
+    "private": true
   }
 
 yarn manifest: 
@@ -2277,6 +2280,13 @@ Lockfile:
     dependencies:
       rsvp "^4.8.4"
   
+  card-validator@^3.0.0:
+    version "3.0.1"
+    resolved "https://registry.yarnpkg.com/card-validator/-/card-validator-3.0.1.tgz#dcc2fabd6a1cd21f361b2536423a72de99a0894f"
+    dependencies:
+      credit-card-type "^5.0.0"
+      lodash "3.10.1"
+  
   chalk@^2.0.0, chalk@^2.0.1, chalk@^2.4.1, chalk@^2.4.2:
     version "2.4.2"
     resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
@@ -2535,6 +2545,10 @@ Lockfile:
     dependencies:
       loose-envify "^1.3.1"
       object-assign "^4.1.1"
+  
+  credit-card-type@^5.0.0:
+    version "5.0.4"
+    resolved "https://registry.yarnpkg.com/credit-card-type/-/credit-card-type-5.0.4.tgz#2dd9df280411ce2bb91ed95ac31e814605717aed"
   
   cross-spawn@^5.1.0:
     version "5.1.0"
@@ -3429,6 +3443,10 @@ Lockfile:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"
   
+  form-urlencoded@^1.5.1:
+    version "1.5.1"
+    resolved "https://registry.yarnpkg.com/form-urlencoded/-/form-urlencoded-1.5.1.tgz#fb69d16a6469363b3fdabf9d256a39a7a5ed2e13"
+  
   fragment-cache@^0.2.1:
     version "0.2.1"
     resolved "https://registry.yarnpkg.com/fragment-cache/-/fragment-cache-0.2.1.tgz#4290fad27f13e89be7f33799c6bc5a0abfff0d19"
@@ -4219,6 +4237,14 @@ Lockfile:
     version "4.5.0"
     resolved "https://registry.yarnpkg.com/lodash.clone/-/lodash.clone-4.5.0.tgz#195870450f5a13192478df4bc3d23d2dea1907b6"
   
+  lodash.compact@^3.0.1:
+    version "3.0.1"
+    resolved "https://registry.yarnpkg.com/lodash.compact/-/lodash.compact-3.0.1.tgz#540ce3837745975807471e16b4a2ba21e7256ca5"
+  
+  lodash.every@^4.6.0:
+    version "4.6.0"
+    resolved "https://registry.yarnpkg.com/lodash.every/-/lodash.every-4.6.0.tgz#eb89984bebc4364279bb3aefbbd1ca19bfa6c6a7"
+  
   lodash.frompairs@^4.0.1:
     version "4.0.1"
     resolved "https://registry.yarnpkg.com/lodash.frompairs/-/lodash.frompairs-4.0.1.tgz#bc4e5207fa2757c136e573614e9664506b2b1bd2"
@@ -4255,6 +4281,14 @@ Lockfile:
   lodash.throttle@^4.1.1:
     version "4.1.1"
     resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
+  
+  lodash.values@^4.3.0:
+    version "4.3.0"
+    resolved "https://registry.yarnpkg.com/lodash.values/-/lodash.values-4.3.0.tgz#a3a6c2b0ebecc5c2cba1c17e6e620fe81b53d347"
+  
+  lodash@3.10.1:
+    version "3.10.1"
+    resolved "https://registry.yarnpkg.com/lodash/-/lodash-3.10.1.tgz#5bf45e8e49ba4189e17d482789dfd15bd140b7b6"
   
   lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.3.0, lodash@^4.5.0, lodash@^4.6.0:
     version "4.17.20"
@@ -5410,6 +5444,24 @@ Lockfile:
     version "17.0.1"
     resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.1.tgz#5b3531bd76a645a4c9fb6e693ed36419e3301339"
   
+  react-native-credit-card-input@^0.4.1:
+    version "0.4.1"
+    resolved "https://registry.yarnpkg.com/react-native-credit-card-input/-/react-native-credit-card-input-0.4.1.tgz#e62dd1a9beeab6787e5373ba23b93831cbf5f3de"
+    dependencies:
+      card-validator "^3.0.0"
+      lodash.compact "^3.0.1"
+      lodash.every "^4.6.0"
+      lodash.pick "^4.4.0"
+      lodash.values "^4.3.0"
+      prop-types "^15.6.0"
+      react-native-flip-card "^3.4.1"
+  
+  react-native-flip-card@^3.4.1:
+    version "3.5.6"
+    resolved "https://registry.yarnpkg.com/react-native-flip-card/-/react-native-flip-card-3.5.6.tgz#de26f0285aa6f8ee10bb4b696c60c6fb43bb580f"
+    dependencies:
+      prop-types "^15.5.10"
+  
   react-native-gesture-handler@~1.8.0:
     version "1.8.0"
     resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.8.0.tgz#18f61f51da50320f938957b0ee79bc58f47449dc"
@@ -6119,6 +6171,12 @@ Lockfile:
     version "2.0.1"
     resolved "https://registry.yarnpkg.com/strip-json-comments/-/strip-json-comments-2.0.1.tgz#3c531942e908c2697c0ec344858c286c7ca0a60a"
   
+  stripe-client@^1.1.5:
+    version "1.1.5"
+    resolved "https://registry.yarnpkg.com/stripe-client/-/stripe-client-1.1.5.tgz#49e8a6f3c884fa96d5d8023c0d436b58ed7bf713"
+    dependencies:
+      form-urlencoded "^1.5.1"
+  
   styled-components@^5.2.1:
     version "5.2.1"
     resolved "https://registry.yarnpkg.com/styled-components/-/styled-components-5.2.1.tgz#6ed7fad2dc233825f64c719ffbdedd84ad79101a"
@@ -6684,9 +6742,14 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
 
 Trace: 
-  Error: Package doesn't have a name.
+  Error: Command "serve" not found.
       at new MessageError (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:186:110)
-      at Object.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:87088:13)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:87307:17
       at Generator.next (<anonymous>)
       at step (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:98:30)
-      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:109:13
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:116:14
+      at new Promise (<anonymous>)
+      at new F (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:23451:28)
+      at /usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:95:12
+      at runCommand (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:87312:22)
+      at Object.<anonymous> (/usr/local/Cellar/yarn/1.5.1_1/libexec/lib/cli.js:87412:14)
