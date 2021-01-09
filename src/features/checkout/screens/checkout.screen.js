@@ -1,9 +1,10 @@
 import React, { useState, useEffect, useContext } from "react";
 import { List, Colors } from "react-native-paper";
-import { ScrollView } from "react-native";
+import { ScrollView, Platform } from "react-native";
 
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { SafeArea } from "../../../components/utility/safe-area.component";
+import { KeyboardAvoidingView } from "../../../components/utility/keyboard-avoiding.component";
 import { Text } from "../../../components/typography/text.component";
 import { CreditCardInput } from "../components/credit-card.component";
 import {
@@ -75,59 +76,69 @@ export const CheckoutScreen = ({ navigation }) => {
     );
   }
   return (
-    <SafeArea>
-      <RestaurantInfoCard restaurant={restaurant} />
-      {isLoading && (
-        <PaymentProcessing size={128} animating={true} color={Colors.blue300} />
-      )}
-      <ScrollView>
-        <Spacer position="left" size="medium">
-          <Spacer position="top" size="large">
-            <Title>Your Order</Title>
-          </Spacer>
-          <List.Section>
-            {cart.map(({ item, price }) => {
-              return <List.Item title={`${item} - ${price / 100}`} />;
-            })}
-          </List.Section>
-
-          <Text>Total: {sum / 100}</Text>
-        </Spacer>
-        <NameInput label="Name" value={name} onChangeText={(u) => setName(u)} />
-        {name && (
-          <Spacer position="top" size="large">
-            <CreditCardInput
-              name={name}
-              onSuccess={setCard}
-              onError={() => {
-                navigation.navigate("CheckoutError", {
-                  error:
-                    "Something went wrong processing your card information, make sure it's valid",
-                });
-              }}
-            />
-          </Spacer>
+    <KeyboardAvoidingView>
+      <SafeArea>
+        <RestaurantInfoCard restaurant={restaurant} />
+        {isLoading && (
+          <PaymentProcessing
+            size={128}
+            animating={true}
+            color={Colors.blue300}
+          />
         )}
-        <Spacer position="top" size="xxl" />
-        <PayButton
-          disabled={isLoading}
-          icon="cash-usd"
-          mode="contained"
-          onPress={onPay}
-        >
-          Pay
-        </PayButton>
-        <Spacer position="top" size="large">
-          <ClearButton
+        <ScrollView>
+          <Spacer position="left" size="medium">
+            <Spacer position="top" size="large">
+              <Title>Your Order</Title>
+            </Spacer>
+            <List.Section>
+              {cart.map(({ item, price }) => {
+                return <List.Item title={`${item} - ${price / 100}`} />;
+              })}
+            </List.Section>
+
+            <Text>Total: {sum / 100}</Text>
+          </Spacer>
+          <NameInput
+            label="Name"
+            value={name}
+            onChangeText={(u) => setName(u)}
+          />
+          {name && (
+            <Spacer position="top" size="large">
+              <CreditCardInput
+                name={name}
+                onSuccess={setCard}
+                onError={() => {
+                  navigation.navigate("CheckoutError", {
+                    error:
+                      "Something went wrong processing your card information, make sure it's valid",
+                  });
+                }}
+              />
+            </Spacer>
+          )}
+          <Spacer position="top" size="xxl" />
+          <PayButton
             disabled={isLoading}
-            icon="cart-off"
+            icon="cash-usd"
             mode="contained"
-            onPress={clearCart}
+            onPress={onPay}
           >
-            Clear Cart
-          </ClearButton>
-        </Spacer>
-      </ScrollView>
-    </SafeArea>
+            Pay
+          </PayButton>
+          <Spacer position="top" size="large">
+            <ClearButton
+              disabled={isLoading}
+              icon="cart-off"
+              mode="contained"
+              onPress={clearCart}
+            >
+              Clear Cart
+            </ClearButton>
+          </Spacer>
+        </ScrollView>
+      </SafeArea>
+    </KeyboardAvoidingView>
   );
 };

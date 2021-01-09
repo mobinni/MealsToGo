@@ -1,5 +1,6 @@
 {
   "expo": {
+    "owner": "ztm",
     "name": "MealsToGo",
     "slug": "MealsToGo",
     "version": "0.0.1",

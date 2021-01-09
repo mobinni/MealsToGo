@@ -1,8 +1,8 @@
 Arguments: 
-  /Users/education/.fnm/node-versions/v14.15.3/installation/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js serve
+  /Users/education/.fnm/node-versions/v14.15.3/installation/bin/node /usr/local/Cellar/yarn/1.5.1_1/libexec/bin/yarn.js deploy
 
 PATH: 
-  /Users/education/.fnm/current/bin:/Users/education/.nvm/versions/node/v10.16.0/bin:/Users/education/Library/Android/sdk/tools:/Users/education/Library/Android/sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/usr/local/share/dotnet:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/education/.nvm/versions/node/v10.16.0/bin:/Users/education/Library/Android/sdk/tools:/Users/education/Library/Android/sdk/platform-tools:/opt/local/bin:/opt/local/bin
+  /Users/education/.fnm/current/bin:/Users/education/.nvm/versions/node/v10.16.0/bin:/Users/education/Library/Android/sdk/tools:/Users/education/Library/Android/sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/MacGPG2/bin:/usr/local/share/dotnet:/Library/Apple/usr/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Postgres.app/Contents/Versions/latest/bin:/opt/local/bin
 
 Yarn version: 
   1.5.1
@@ -1454,7 +1454,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c firebase emulators:start --only functions
+  Arguments: -c firebase deploy --only functions
   Directory: /Users/education/Documents/projects/MealsToGo/functions
   Output:
   
