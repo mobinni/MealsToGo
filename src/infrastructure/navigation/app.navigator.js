@@ -38,6 +38,7 @@ export const AppNavigator = () => (
         <CartContextProvider>
           <Tab.Navigator
             screenOptions={createScreenOptions}
+            animationEnabled
             tabBarOptions={{
               activeTintColor: colors.brand.primary,
               inactiveTintColor: colors.brand.muted,

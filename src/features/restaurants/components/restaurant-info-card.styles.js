@@ -8,6 +8,8 @@ export const Icon = styled.Image`
 
 export const RestaurantCard = styled(Card)`
   background-color: ${(props) => props.theme.colors.bg.primary};
+  width: 95%;
+  align-self: center;
 `;
 
 export const RestaurantCardCover = styled(Card.Cover)`

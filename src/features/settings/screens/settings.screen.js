@@ -78,6 +78,26 @@ export const SettingsScreen = ({ navigation }) => {
           />
           <Spacer position="top" size="small" />
           <SettingsItem
+            title="Payment"
+            left={(props) => (
+              <List.Icon {...props} color={colors.ui.secondary} icon="cart" />
+            )}
+            onPress={() => null}
+          />
+          <Spacer position="top" size="small" />
+          <SettingsItem
+            title="Past Orders"
+            left={(props) => (
+              <List.Icon
+                {...props}
+                color={colors.ui.secondary}
+                icon="history"
+              />
+            )}
+            onPress={() => null}
+          />
+          <Spacer position="top" size="small" />
+          <SettingsItem
             title="Logout"
             left={(props) => (
               <List.Icon {...props} color={colors.ui.secondary} icon="door" />
