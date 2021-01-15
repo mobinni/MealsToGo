@@ -1,3 +1,11 @@
 import React from "react";
 
-export const CheckoutScreen = () => null;
+import { SafeArea } from "../../../components/utility/safe-area.component";
+
+import { CreditCardInput } from "../components/credit-card.component";
+
+export const CheckoutScreen = () => (
+  <SafeArea>
+    <CreditCardInput />
+  </SafeArea>
+);
