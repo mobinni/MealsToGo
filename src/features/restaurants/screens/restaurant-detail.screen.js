@@ -9,7 +9,7 @@ import { SafeArea } from "../../../components/utility/safe-area.component";
 import { OrderButton } from "../components/restaurant-list.styles";
 import { CartContext } from "../../../services/cart/cart.context";
 
-export const RestaurantDetailScreen = ({ route }) => {
+export const RestaurantDetailScreen = ({ navigation, route }) => {
   const [breakfastExpanded, setBreakfastExpanded] = useState(false);
   const [lunchExpanded, setLunchExpanded] = useState(false);
   const [dinnerExpanded, setDinnerExpanded] = useState(false);
@@ -73,6 +73,7 @@ export const RestaurantDetailScreen = ({ route }) => {
           mode="contained"
           onPress={() => {
             addToCart({ item: "special", price: 1299 }, restaurant);
+            navigation.navigate("Checkout");
           }}
         >
           Order Special Only 12.99!
