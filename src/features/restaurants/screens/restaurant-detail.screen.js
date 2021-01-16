@@ -9,7 +9,7 @@ import { SafeArea } from "../../../components/utility/safe-area.component";
 import { OrderButton } from "../components/restaurant-list.styles";
 import { CartContext } from "../../../services/cart/cart.context";
 
-export const RestaurantDetailScreen = ({ navigation, route }) => {
+export const RestaurantDetailScreen = ({ route }) => {
   const [breakfastExpanded, setBreakfastExpanded] = useState(false);
   const [lunchExpanded, setLunchExpanded] = useState(false);
   const [dinnerExpanded, setDinnerExpanded] = useState(false);
