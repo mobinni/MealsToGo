@@ -234,6 +234,10 @@
   version "14.14.16"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.16.tgz#3cc351f8d48101deadfed4c9e4f116048d437b4b"
 
+"@types/node@>=8.1.0":
+  version "14.14.21"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.21.tgz#d934aacc22424fe9622ebf6857370c052eae464e"
+
 "@types/node@^10.10.0":
   version "10.17.50"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.50.tgz#7a20902af591282aa9176baefc37d4372131c32d"
@@ -1096,6 +1100,10 @@ qs@6.7.0:
   version "6.7.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.7.0.tgz#41dc1a015e3d581f1621776be31afb2876a9b1bc"
 
+qs@^6.6.0:
+  version "6.9.6"
+  resolved "https://registry.yarnpkg.com/qs/-/qs-6.9.6.tgz#26ed3c8243a431b2924aca84cc90471f35d5a0ee"
+
 query-string@^6.11.0:
   version "6.13.8"
   resolved "https://registry.yarnpkg.com/query-string/-/query-string-6.13.8.tgz#8cf231759c85484da3cf05a851810d8e825c1159"
@@ -1251,6 +1259,13 @@ strip-ansi@^6.0.0:
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.0.tgz#0b1571dd7669ccd4f3e06e14ef1eed26225ae532"
   dependencies:
     ansi-regex "^5.0.0"
+
+stripe@^8.131.1:
+  version "8.131.1"
+  resolved "https://registry.yarnpkg.com/stripe/-/stripe-8.131.1.tgz#50ac816ba6959ace144002328240e6eaa79e156f"
+  dependencies:
+    "@types/node" ">=8.1.0"
+    qs "^6.6.0"
 
 stubs@^3.0.0:
   version "3.0.0"
