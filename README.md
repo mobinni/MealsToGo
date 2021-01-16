@@ -4,6 +4,7 @@
 | ------------- |:-------------:|
 | Full Build      | [master](https://github.com/mobinni/MealsToGo) |
 | Full Mock Build      | [full-mock](https://github.com/mobinni/MealsToGo/tree/full-mock)      |
+| Full Mock Build With Polish      | [full-mock-with-polish](https://github.com/mobinni/MealsToGo/tree/full-mock-with-polish)      |
 
 ### Setting up full build
 
