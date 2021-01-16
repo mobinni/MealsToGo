@@ -26,7 +26,7 @@ export const CartContextProvider = ({ children }) => {
 
   return (
     <CartContext.Provider
-      values={{
+      value={{
         addToCart: add,
         clearCart: clear,
         restaurant,
