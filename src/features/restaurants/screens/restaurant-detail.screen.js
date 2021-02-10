@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { ScrollView } from "react-native";
 import { List, Divider } from "react-native-paper";
 
@@ -8,8 +8,11 @@ import { RestaurantInfoCard } from "../components/restaurant-info-card.component
 import { SafeArea } from "../../../components/utility/safe-area.component";
 import { OrderButton } from "../components/restaurant-list.styles";
 import { CartContext } from "../../../services/cart/cart.context";
+import { host } from "../../../utils/env";
+import { LocationContext } from "../../../services/location/location.context";
 
 export const RestaurantDetailScreen = ({ navigation, route }) => {
+  const [restaurantDetails, setRestaurantDetails] = useState(null);
   const [breakfastExpanded, setBreakfastExpanded] = useState(false);
   const [lunchExpanded, setLunchExpanded] = useState(false);
   const [dinnerExpanded, setDinnerExpanded] = useState(false);
@@ -17,10 +20,47 @@ export const RestaurantDetailScreen = ({ navigation, route }) => {
 
   const { restaurant } = route.params;
   const { addToCart } = useContext(CartContext);
+  const { location } = useContext(LocationContext);
+
+  useEffect(() => {
+    fetch(
+      `${host}/fetchRestaurantDetails?location=${location.lat},${location.lng}&name=${restaurant.name}`
+    )
+      .then((res) => {
+        return res.json();
+      })
+      .then((res) => {
+        setRestaurantDetails(res.businesses[0]);
+      })
+      .catch((e) => {
+        console.log(e);
+      });
+  }, [location.lat, location.lng, restaurant.name]);
+
+  if (!restaurantDetails) return null;
+
+  const {
+    name,
+    image_url,
+    location: { address1 },
+    is_closed,
+    rating,
+  } = restaurantDetails;
 
   return (
     <SafeArea>
-      <RestaurantInfoCard restaurant={restaurant} />
+      <RestaurantInfoCard
+        restaurant={{
+          name,
+          icon:
+            "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+          photos: [image_url],
+          address: address1,
+          isOpenNow: !is_closed,
+          rating,
+          isClosedTemporarily: false,
+        }}
+      />
       <ScrollView>
         <List.Accordion
           title="Breakfast"
