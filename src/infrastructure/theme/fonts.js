@@ -1,7 +1,7 @@
 export const fonts = {
-  body: "Oswald_400Regular",
-  heading: "Lato_400Regular",
-  monospace: "Oswald_400Regular",
+  body: "PaytoneOne_400Regular",
+  heading: "PaytoneOne_400Regular",
+  monospace: "PaytoneOne_400Regular",
 };
 
 export const fontWeights = {

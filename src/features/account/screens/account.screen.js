@@ -8,12 +8,20 @@ import {
   AccountCover,
   AuthButton,
   Title,
+  // BrandLogo,
+  AreYouReady,
+  TitlePink,
   AnimationWrapper,
+  LogoContainer,
+  WelcomeTo
 } from "../components/account.styles";
+import { colors } from "../../../infrastructure/theme/colors";
+
 
 export const AccountScreen = ({ navigation }) => {
   return (
     <AccountBackground>
+      <WelcomeTo>Welcome to</WelcomeTo>
       <AccountCover />
       <AnimationWrapper>
         <LottieView
@@ -21,10 +29,16 @@ export const AccountScreen = ({ navigation }) => {
           autoPlay
           loop
           resizeMode="cover"
-          source={require("../../../../assets/watermelon.json")}
+          source={require("../../../../assets/shotzanime.json")}
+          speed={0.5}
         />
       </AnimationWrapper>
-      <Title>Meals To Go</Title>
+      <LogoContainer>
+      <TitlePink>Shotz</TitlePink>
+      {/* <BrandLogo source={require("../../../../assets/logo.png")}></BrandLogo>  */}
+      <Title> On Me!</Title>
+      </LogoContainer>
+      <AreYouReady>Are You Ready For Free Shotz?</AreYouReady>
       <AccountContainer>
         <AuthButton
           icon="lock-open-outline"

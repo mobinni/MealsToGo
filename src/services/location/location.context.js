@@ -17,6 +17,7 @@ export const LocationContextProvider = ({ children }) => {
 
   useEffect(() => {
     if (!keyword.length) {
+      console.log(location, error, "real");
       // don't do anything
       return;
     }

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { TouchableOpacity } from "react-native";
 import styled from "styled-components/native";
 import { ActivityIndicator, Colors } from "react-native-paper";
@@ -33,6 +33,11 @@ export const RestaurantsScreen = ({ navigation }) => {
   const { favourites } = useContext(FavouritesContext);
   const [isToggled, setIsToggled] = useState(false);
   const hasError = !!error || !!locationError;
+
+  useEffect(() => {
+console.log(error, locationError)
+  }, [])
+
   return (
     <SafeArea>
       {isLoading && (

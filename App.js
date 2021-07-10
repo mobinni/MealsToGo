@@ -8,6 +8,7 @@ import {
   Oswald_400Regular,
 } from "@expo-google-fonts/oswald";
 import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
+import { useFonts as usePaytone, PaytoneOne_400Regular } from '@expo-google-fonts/paytone-one'
 
 import { theme } from "./src/infrastructure/theme";
 import { Navigation } from "./src/infrastructure/navigation";
@@ -15,12 +16,12 @@ import { Navigation } from "./src/infrastructure/navigation";
 import { AuthenticationContextProvider } from "./src/services/authentication/authentication.context";
 
 const firebaseConfig = {
-  apiKey: "<fill in your own>",
-  authDomain: "<fill in your own>",
-  projectId: "<fill in your own>",
-  storageBucket: "<fill in your own>",
-  messagingSenderId: "<fill in your own>",
-  appId: "<fill in your own>",
+  apiKey: "AIzaSyDL1XisRIMjgHtU8tY76Q-Cop5O8_uDdd0",
+  authDomain: "take-a-shot-719e2.firebaseapp.com",
+  projectId: "take-a-shot-719e2",
+  storageBucket: "take-a-shot-719e2.appspot.com",
+  messagingSenderId: "454737334806",
+  appId: "1:454737334806:web:a55bdccd16c56845b09b37",
 };
 
 if (!firebase.apps.length) {
@@ -32,11 +33,15 @@ export default function App() {
     Oswald_400Regular,
   });
 
+  const [paytonLoaded] = usePaytone ({
+    PaytoneOne_400Regular,
+  });
+
   const [latoLoaded] = useLato({
     Lato_400Regular,
   });
 
-  if (!oswaldLoaded || !latoLoaded) {
+  if (!oswaldLoaded || !latoLoaded || !paytonLoaded) {
     return null;
   }
 

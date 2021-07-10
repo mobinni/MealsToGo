@@ -9,6 +9,8 @@ import {
   AuthInput,
   ErrorContainer,
   Title,
+  TitlePink,
+  LogoContainer,
 } from "../components/account.styles";
 import { Text } from "../../../components/typography/text.component";
 import { Spacer } from "../../../components/spacer/spacer.component";
@@ -21,7 +23,10 @@ export const LoginScreen = ({ navigation }) => {
   return (
     <AccountBackground>
       <AccountCover />
-      <Title>Meals To Go</Title>
+      <LogoContainer>
+        <TitlePink>Shotz</TitlePink>
+        <Title> On Me!</Title>
+      </LogoContainer>
       <AccountContainer>
         <AuthInput
           label="E-mail"

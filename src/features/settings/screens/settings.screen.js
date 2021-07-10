@@ -13,7 +13,7 @@ const TransparentSafeArea = styled(SafeArea)`
   background-color: transparent;
 `;
 const SettingsBackground = styled.ImageBackground.attrs({
-  source: require("../../../../assets/home_bg.jpg"),
+  source: require("../../../../assets/BgGrey.png"),
 })`
   position: absolute;
   height: 100%;

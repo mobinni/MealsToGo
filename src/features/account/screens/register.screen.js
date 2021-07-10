@@ -10,6 +10,8 @@ import {
   AuthInput,
   ErrorContainer,
   Title,
+  LogoContainer,
+  TitlePink,
 } from "../components/account.styles";
 import { Text } from "../../../components/typography/text.component";
 import { Spacer } from "../../../components/spacer/spacer.component";
@@ -23,7 +25,10 @@ export const RegisterScreen = ({ navigation }) => {
   return (
     <AccountBackground>
       <AccountCover />
-      <Title>Meals To Go</Title>
+      <LogoContainer>
+        <TitlePink>Shotz</TitlePink>
+        <Title> On Me!</Title>
+      </LogoContainer>
       <AccountContainer>
         <AuthInput
           label="E-mail"
