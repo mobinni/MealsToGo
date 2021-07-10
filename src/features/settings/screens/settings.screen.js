@@ -55,15 +55,15 @@ export const SettingsScreen = ({ navigation }) => {
           />
           <Spacer />
           <SettingsItem
-            title="Payment"
+            title="Claim Shotz"
             left={(props) => (
-              <List.Icon {...props} color={colors.ui.secondary} icon="cart" />
+              <List.Icon {...props} color={colors.ui.secondary} icon="camera" />
             )}
             onPress={() => null}
           />
           <Spacer />
           <SettingsItem
-            title="Past Orders"
+            title="Past Shotz"
             left={(props) => (
               <List.Icon
                 {...props}

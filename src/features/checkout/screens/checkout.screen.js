@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { ScrollView } from "react-native";
+import { ScrollView, Image } from "react-native";
 import { List, Divider } from "react-native-paper";
 
 import { Text } from "../../../components/typography/text.component";
@@ -12,11 +12,12 @@ import { CreditCardInput } from "../components/credit-card.component";
 
 import {
   CartIconContainer,
-  CartIcon,
+  // CartIcon,
   NameInput,
   PayButton,
   ClearButton,
   PaymentProcessing,
+  // BrandLogo
 } from "../components/checkout.styles";
 import { RestaurantInfoCard } from "../../restaurants/components/restaurant-info-card.component";
 import { payRequest } from "../../../services/checkout/checkout.service";
@@ -54,8 +55,8 @@ export const CheckoutScreen = ({ navigation }) => {
     return (
       <SafeArea>
         <CartIconContainer>
-          <CartIcon icon="cart-off" />
-          <Text>Your cart is empty!</Text>
+          <Image source={require("../../../../assets/logo.png")}/>
+          <Text>You haven't booked an free shotz yet!</Text>
         </CartIconContainer>
       </SafeArea>
     );
@@ -67,7 +68,7 @@ export const CheckoutScreen = ({ navigation }) => {
       <ScrollView>
         <Spacer position="left" size="medium">
           <Spacer position="top" size="large">
-            <Text>Your Order</Text>
+            <Text>Your Shotz</Text>
           </Spacer>
           <List.Section>
             {cart.map(({ item, price }, i) => {

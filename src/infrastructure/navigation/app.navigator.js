@@ -15,9 +15,9 @@ import { colors } from "../../infrastructure/theme/colors";
 const Tab = createBottomTabNavigator();
 
 const TAB_ICON = {
-  Bar_List: "md-beer",
+  "Bar List": "md-beer",
   Map: "md-map",
-  Claim_Shots: "md-cart",
+  "Claim Shotz": "md-camera",
   Settings: "md-settings",
 };
 
@@ -42,8 +42,8 @@ export const AppNavigator = () => (
               inactiveTintColor: colors.brand.muted,
             }}
           >
-            <Tab.Screen name="Bar_List" component={RestaurantsNavigator} />
-            <Tab.Screen name="Checkout" component={CheckoutNavigator} />
+            <Tab.Screen name="Bar List" component={RestaurantsNavigator} />
+            <Tab.Screen name="Claim Shotz" component={CheckoutNavigator} />
             <Tab.Screen name="Map" component={MapScreen} />
             <Tab.Screen name="Settings" component={SettingsNavigator} />
           </Tab.Navigator>
