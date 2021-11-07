@@ -18,7 +18,7 @@
     "@react-navigation/native": "^5.8.10",
     "@react-navigation/stack": "^5.12.8",
     "camelize": "^1.0.0",
-    "expo": "~40.0.0",
+    "expo": "^43.0.0",
     "expo-font": "~10.0.3",
     "expo-status-bar": "~1.1.0",
     "firebase": "7.9.0",
