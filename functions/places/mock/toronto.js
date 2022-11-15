@@ -20,8 +20,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
       name: "Novotel Toronto Centre",
       opening_hours: {
         open_now: true,
@@ -70,8 +69,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
       name: "Fairmont Royal York",
       opening_hours: {
         open_now: true,
@@ -120,8 +118,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
       name: "HOTEL OCHO",
       opening_hours: {
         open_now: true,
@@ -171,8 +168,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Marquis Lounge and Bistro",
       photos: [
         {
@@ -218,8 +214,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Oliver & Bonacini Café Grill, Yonge & Front",
       opening_hours: {
         open_now: false,
@@ -270,8 +265,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Adega Restaurante",
       permanently_closed: true,
       photos: [
@@ -313,8 +307,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Terroni",
       opening_hours: {
         open_now: true,
@@ -358,8 +351,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "The Keg Steakhouse + Bar - York Street",
       permanently_closed: true,
       photos: [
@@ -401,8 +393,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Jump Restaurant",
       permanently_closed: true,
       photos: [
@@ -450,8 +441,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "The Senator",
       opening_hours: {
         open_now: false,
@@ -495,8 +485,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Donatello Restaurant",
       opening_hours: {
         open_now: false,
@@ -540,8 +529,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Canoe",
       opening_hours: {
         open_now: false,
@@ -591,8 +579,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Jack Astor's Bar & Grill",
       opening_hours: {
         open_now: true,
@@ -642,8 +629,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Salad King",
       opening_hours: {
         open_now: true,
@@ -687,8 +673,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "IL FORNELLO on King",
       permanently_closed: true,
       photos: [
@@ -738,8 +723,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Little India Restaurant",
       opening_hours: {
         open_now: true,
@@ -789,8 +773,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
       name: "Scotland Yard Pub",
       opening_hours: {
         open_now: true,
@@ -840,8 +823,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "309 Dhaba Indian Restaurant of Excellence",
       opening_hours: {
         open_now: true,
@@ -891,8 +873,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "VOLOS",
       permanently_closed: true,
       photos: [
@@ -934,8 +915,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "PLANTA Queen",
       opening_hours: {
         open_now: true,

@@ -20,8 +20,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
       name: "Mercure Antwerp City Centre",
       opening_hours: {
         open_now: true,
@@ -57,8 +56,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
       name: "Elzenveld Hotel & Seminar",
       photos: [
         {
@@ -105,8 +103,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
       name: "HotelO",
       opening_hours: {
         open_now: false,
@@ -156,8 +153,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "The Glorious Inn",
       opening_hours: {
         open_now: false,
@@ -194,8 +190,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
       name: "Hotel Pilar",
       opening_hours: {
         open_now: true,
@@ -233,8 +228,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "De Peerdestal | Restaurant Antwerpen",
       opening_hours: {
         open_now: true,
@@ -272,8 +266,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Huis De Colvenier",
       opening_hours: {
         open_now: true,
@@ -310,8 +303,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Il Milanese by Lollapalooza",
       opening_hours: {
         open_now: true,
@@ -349,8 +341,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Het Vermoeide Model",
       opening_hours: {
         open_now: true,
@@ -388,8 +379,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "'t Fornuis",
       opening_hours: {
         open_now: false,
@@ -433,8 +423,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Lunchbox",
       opening_hours: {
         open_now: false,
@@ -484,8 +473,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Zuiderterras / RAS",
       opening_hours: {
         open_now: true,
@@ -535,8 +523,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Pazzo",
       opening_hours: {
         open_now: false,
@@ -580,8 +567,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Horta Grand Café & Art Nouveau Zaal",
       opening_hours: {
         open_now: true,
@@ -625,8 +611,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Sir Anthony Van Dijck",
       opening_hours: {
         open_now: false,
@@ -670,8 +655,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
       name: "Mañana Mañana",
       opening_hours: {
         open_now: false,
@@ -722,8 +706,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "De Broers van Julienne",
       opening_hours: {
         open_now: true,
@@ -773,8 +756,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Het Gebaar",
       opening_hours: {
         open_now: false,
@@ -818,8 +800,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Da Giovanni Groenplaats TAKE OUT",
       opening_hours: {
         open_now: true,
@@ -863,8 +844,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Bij Lam & Yin",
       opening_hours: {
         open_now: false,

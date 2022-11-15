@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { ScrollView } from "react-native";
 import { List, Divider } from "react-native-paper";
 

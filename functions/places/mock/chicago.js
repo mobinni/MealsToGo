@@ -20,8 +20,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
       name: "Fairmont Chicago - Millennium Park",
       opening_hours: {
         open_now: true,
@@ -71,8 +70,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
       name: "Trump International Hotel & Tower® Chicago",
       opening_hours: {
         open_now: true,
@@ -124,8 +122,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
       name: "Swissotel Chicago",
       opening_hours: {
         open_now: true,
@@ -174,8 +171,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Lou Malnati's Pizzeria",
       opening_hours: {
         open_now: true,
@@ -226,8 +222,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Siena Tavern",
       opening_hours: {
         open_now: true,
@@ -277,8 +272,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Petterino's",
       opening_hours: {
         open_now: true,
@@ -328,8 +322,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Giordano's",
       opening_hours: {
         open_now: true,
@@ -379,8 +372,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "The Gage",
       opening_hours: {
         open_now: true,
@@ -430,8 +422,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Yolk - South Loop",
       opening_hours: {
         open_now: true,
@@ -482,8 +473,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "M Burger",
       permanently_closed: true,
       photos: [
@@ -524,8 +514,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/cafe-71.png",
       name: "Wildberry Pancakes & Cafe",
       opening_hours: {
         open_now: true,
@@ -575,8 +564,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "The Berghoff Restaurant",
       permanently_closed: true,
       photos: [
@@ -618,8 +606,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Lou Mitchell's",
       opening_hours: {
         open_now: true,
@@ -663,8 +650,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "South Branch Tavern and Grille",
       permanently_closed: true,
       photos: [
@@ -712,8 +698,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Sweetwater Tavern and Grille",
       permanently_closed: true,
       photos: [
@@ -761,8 +746,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
       name: "Buddy Guy's Legends",
       photos: [
         {
@@ -810,8 +794,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Frontera Grill",
       opening_hours: {
         open_now: true,
@@ -855,8 +838,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "One North Kitchen & Bar",
       permanently_closed: true,
       photos: [
@@ -904,8 +886,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "312 Chicago",
       opening_hours: {
         open_now: true,
@@ -955,8 +936,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Chicago Cut Steakhouse",
       opening_hours: {
         open_now: true,

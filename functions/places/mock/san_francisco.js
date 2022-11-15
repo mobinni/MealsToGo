@@ -20,8 +20,7 @@ module.exports = {
           },
         },
       },
-      ix:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      ix: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Zuni Café",
       opening_hours: {
         open_now: true,
@@ -72,8 +71,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Brenda's French Soul Food",
       opening_hours: {
         open_now: true,
@@ -117,8 +115,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
       name: "DNA Lounge",
       opening_hours: {
         open_now: false,
@@ -170,8 +167,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Absinthe Brasserie & Bar",
       opening_hours: {
         open_now: false,
@@ -221,8 +217,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "YH - BEIJING",
       opening_hours: {
         open_now: true,
@@ -266,8 +261,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Zeitgeist",
       opening_hours: {
         open_now: false,
@@ -317,8 +311,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Pancho Villa Taqueria",
       opening_hours: {
         open_now: true,
@@ -362,8 +355,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "The Monk's Kettle",
       opening_hours: {
         open_now: false,
@@ -413,8 +405,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
       name: "Bar Agricole",
       permanently_closed: true,
       photos: [
@@ -462,8 +453,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "SoMa StrEat Food Park",
       opening_hours: {
         open_now: true,
@@ -514,8 +504,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Suppenküche",
       opening_hours: {
         open_now: false,
@@ -559,8 +548,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
       name: "City Beer Store",
       opening_hours: {
         open_now: false,
@@ -612,8 +600,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Tommy's Joynt",
       opening_hours: {
         open_now: false,
@@ -663,8 +650,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Limón Rotisserie",
       opening_hours: {
         open_now: false,
@@ -708,8 +694,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Hayes Street Grill",
       permanently_closed: true,
       photos: [
@@ -757,8 +742,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
       name: "Pause Wine Bar in Hayes Valley",
       opening_hours: {
         open_now: false,
@@ -808,8 +792,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "AsiaSF",
       permanently_closed: true,
       photos: [
@@ -858,8 +841,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Jasper's Corner Tap and Kitchen",
       opening_hours: {
         open_now: true,
@@ -909,8 +891,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/bar-71.png",
       name: "Mikkeller Bar",
       permanently_closed: true,
       photos: [
@@ -958,8 +939,7 @@ module.exports = {
           },
         },
       },
-      icon:
-        "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+      icon: "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
       name: "Patxi's Pizza",
       opening_hours: {
         open_now: true,
