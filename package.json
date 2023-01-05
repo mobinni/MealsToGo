@@ -19,7 +19,7 @@
     "@react-navigation/stack": "^6.3.7",
     "camelize": "^1.0.0",
     "deprecated-react-native-prop-types": "^3.0.1",
-    "expo": "^47.0.8",
+    "expo": "^47.0.10",
     "expo-font": "~11.0.1",
     "expo-status-bar": "~1.4.2",
     "firebase": "9.14.0",

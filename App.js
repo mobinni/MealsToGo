@@ -1,51 +1,48 @@
+import { style } from "deprecated-react-native-prop-types/DeprecatedViewPropTypes";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import React from "react";
-import { ThemeProvider } from "styled-components/native";
-import { initializeApp } from "firebase/app";
+import { View, Text, StyleSheet, SafeAreaView, Platform, StatusBar } from 'react-native'
 
-import {
-  useFonts as useOswald,
-  Oswald_400Regular,
-} from "@expo-google-fonts/oswald";
-import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
-
-import { theme } from "./src/infrastructure/theme";
-import { Navigation } from "./src/infrastructure/navigation";
-
-import { AuthenticationContextProvider } from "./src/services/authentication/authentication.context";
-
-const firebaseConfig = {
-  apiKey: "<fill in your own>",
-  authDomain: "<fill in your own>",
-  projectId: "<fill in your own>",
-  storageBucket: "<fill in your own>",
-  messagingSenderId: "<fill in your own>",
-  appId: "<fill in your own>",
-};
-
-initializeApp(firebaseConfig);
+const isAndroid = Platform.OS === 'android'
 
 export default function App() {
-  const [oswaldLoaded] = useOswald({
-    Oswald_400Regular,
-  });
-
-  const [latoLoaded] = useLato({
-    Lato_400Regular,
-  });
-
-  if (!oswaldLoaded || !latoLoaded) {
-    return null;
-  }
 
   return (
-    <>
-      <ThemeProvider theme={theme}>
-        <AuthenticationContextProvider>
-          <Navigation />
-        </AuthenticationContextProvider>
-      </ThemeProvider>
-      <ExpoStatusBar style="auto" />
-    </>
+  <>
+    <SafeAreaView style={styles.mainView}>
+      <View style={styles.searchArea}>
+        <Text style={styles.searchText}>Search</Text>
+      </View>
+      <View style={styles.listArea}>
+        <Text style={styles.listText}>List</Text>
+      </View>
+    </SafeAreaView>
+    <ExpoStatusBar style='auto' />
+  </>
   );
 }
+
+const styles = StyleSheet.create({
+  mainView: {
+    // The next line only applies to android
+    // For IOS status bar offset SafeAreaView is used
+    marginTop: StatusBar.currentHeight,
+    flex: 1,
+  },
+  searchArea: {
+    backgroundColor: 'green',
+    padding:10,
+  },
+  searchText:{
+
+  },
+  listArea: {
+    flex:1,
+    backgroundColor: 'blue',
+    padding:10,
+  },
+  listText: {
+
+  },
+})
+
