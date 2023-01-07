@@ -1,24 +1,30 @@
 import { style } from "deprecated-react-native-prop-types/DeprecatedViewPropTypes";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import React from "react";
-import { View, Text, StyleSheet, SafeAreaView, Platform, StatusBar } from 'react-native'
+import {
+  View,
+  Text,
+  StyleSheet,
+  SafeAreaView,
+  Platform,
+  StatusBar,
+} from "react-native";
 
-const isAndroid = Platform.OS === 'android'
+const isAndroid = Platform.OS === "android";
 
 export default function App() {
-
   return (
-  <>
-    <SafeAreaView style={styles.mainView}>
-      <View style={styles.searchArea}>
-        <Text style={styles.searchText}>Search</Text>
-      </View>
-      <View style={styles.listArea}>
-        <Text style={styles.listText}>List</Text>
-      </View>
-    </SafeAreaView>
-    <ExpoStatusBar style='auto' />
-  </>
+    <>
+      <SafeAreaView style={styles.mainView}>
+        <View style={styles.searchArea}>
+          <Text style={styles.searchText}>Search</Text>
+        </View>
+        <View style={styles.listArea}>
+          <Text style={styles.listText}>List</Text>
+        </View>
+      </SafeAreaView>
+      <ExpoStatusBar style="auto" />
+    </>
   );
 }
 
@@ -30,19 +36,14 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   searchArea: {
-    backgroundColor: 'green',
-    padding:10,
+    backgroundColor: "#FAA391",
+    padding: 10,
   },
-  searchText:{
-
-  },
+  searchText: {},
   listArea: {
-    flex:1,
-    backgroundColor: 'blue',
-    padding:10,
+    flex: 1,
+    backgroundColor: "#FADD91",
+    padding: 10,
   },
-  listText: {
-
-  },
-})
-
+  listText: {},
+});
