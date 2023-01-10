@@ -1,4 +1,3 @@
-import { style } from "deprecated-react-native-prop-types/DeprecatedViewPropTypes";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import React from "react";
 import {
@@ -10,16 +9,14 @@ import {
   StatusBar,
 } from "react-native";
 
-const isAndroid = Platform.OS === "android";
-
 export default function App() {
   return (
     <>
-      <SafeAreaView style={styles.mainView}>
-        <View style={styles.searchArea}>
+      <SafeAreaView style={styles.container}>
+        <View style={styles.search}>
           <Text style={styles.searchText}>Search</Text>
         </View>
-        <View style={styles.listArea}>
+        <View style={styles.list}>
           <Text style={styles.listText}>List</Text>
         </View>
       </SafeAreaView>
@@ -29,18 +26,18 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  mainView: {
-    // The next line only applies to android
+  container: {
+    // The next code line only applies to android
     // For IOS status bar offset SafeAreaView is used
     marginTop: StatusBar.currentHeight,
     flex: 1,
   },
-  searchArea: {
+  search: {
     backgroundColor: "#FAA391",
     padding: 10,
   },
   searchText: {},
-  listArea: {
+  list: {
     flex: 1,
     backgroundColor: "#FADD91",
     padding: 10,
