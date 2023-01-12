@@ -1,5 +1,7 @@
 import React from "react";
-import { Text } from "react-native";
+import { Avatar, Button, Card, Text } from "react-native-paper";
+
+const LeftContent = (props) => <Avatar.Icon {...props} icon="folder" />;
 
 export const RestaurantInfo = ({ restaurant = {} }) => {
   const {
@@ -14,5 +16,22 @@ export const RestaurantInfo = ({ restaurant = {} }) => {
     isClosedTemporarily = false,
   } = restaurant;
 
-  return <Text>{name}</Text>;
+  return (
+    <Card>
+      <Card.Title
+        title={restaurant.name}
+        subtitle="Card Subtitle"
+        left={LeftContent}
+      />
+      <Card.Content>
+        <Text variant="titleLarge">Card title</Text>
+        <Text variant="bodyMedium">Card content</Text>
+      </Card.Content>
+      <Card.Cover source={{ uri: restaurant.photo }} />
+      {/* <Card.Actions>
+      <Button>Cancel</Button>
+      <Button>Ok</Button>
+    </Card.Actions> */}
+    </Card>
+  );
 };
