@@ -3,7 +3,7 @@ import { SafeAreaView, StyleSheet, View, Text } from "react-native";
 import { Searchbar } from "react-native-paper";
 import { StatusBar as StatusBar } from "expo-status-bar";
 
-import { RestaurantInfo } from "../components/restaurant-info.components";
+import { RestaurantInfoCard } from "../components/restaurant-info-card.components";
 
 export const RestaurantsScreen = () => {
   return (
@@ -12,7 +12,7 @@ export const RestaurantsScreen = () => {
         <Searchbar />
       </View>
       <View style={styles.list}>
-        <RestaurantInfo />
+        <RestaurantInfoCard />
       </View>
     </SafeAreaView>
   );
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   search: {
-    backgroundColor: "#FBCC82",
+    backgroundColor: "#FCB32B",
     padding: 10,
   },
   searchText: {},
