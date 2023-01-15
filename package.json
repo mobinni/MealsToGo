@@ -37,7 +37,7 @@
     "react-native-web": "~0.18.7",
     "react-native-webview": "11.23.1",
     "stripe-client": "^1.1.5",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
