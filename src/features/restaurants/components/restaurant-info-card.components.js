@@ -1,19 +1,18 @@
 import React from "react";
 import { Card, Text } from "react-native-paper";
-import { StyleSheet } from "react-native";
 import styled from "styled-components/native";
 
 const Title = styled(Text)`
-  paddingLeft: 15,
+  padding-left: 15px,
   color: "white",
-  fontWeight: "bold",
-  fontSize: "30",
+  font-weight: "bold",
+  font-size: "30",
 `;
 const RestaurantCard = styled(Card)`
   background-color: "red",
 `;
 const RestautantCardCover = styled(Card.Cover)`
-  padding: 4,
+  padding: 4px,
   background-color: "transparent",
 `;
 
