@@ -25,14 +25,14 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
 
 const styles = StyleSheet.create({
   card: {
-    backgroundColor: "#FC9F5B",
+    backgroundColor: "red",
   },
   cover: {
-    padding: 2,
-    backgroundColor: "white",
+    padding: 4,
+    backgroundColor: "transparent",
   },
   restaurantName: {
-    paddingLeft: 10,
+    paddingLeft: 15,
     color: "white",
     fontWeight: "bold",
     fontSize: "30",
