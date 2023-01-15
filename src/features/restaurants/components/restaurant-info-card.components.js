@@ -2,18 +2,19 @@ import React from "react";
 import { Card, Text } from "react-native-paper";
 import styled from "styled-components/native";
 
-const Title = styled(Text)`
-  padding-left: 15px,
-  color: "white",
-  font-weight: "bold",
-  font-size: "30",
+const Title = styled.Text`
+  padding-left: 2px;
+  padding-bottom: 2px;
+  color: white;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 20px;
 `;
 const RestaurantCard = styled(Card)`
-  background-color: "red",
+  background: red;
 `;
 const RestautantCardCover = styled(Card.Cover)`
-  padding: 4px,
-  background-color: "transparent",
+  background-color: transparent;
 `;
 
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
@@ -31,7 +32,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
 
   return (
     <RestaurantCard elevation={5}>
-      <RestautantCardCover key={name} source={{ uri: photos[0] }} />
+      <Card.Cover key={name} source={{ uri: photos[0] }} />
       <Title>{name}</Title>
     </RestaurantCard>
   );
