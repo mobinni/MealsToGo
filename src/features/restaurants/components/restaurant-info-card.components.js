@@ -4,9 +4,15 @@ import styled from "styled-components/native";
 
 const Title = styled.Text`
   padding-left: 2px;
+<<<<<<< HEAD
   padding-bottom: 2px;
   color: ${(props) => props.theme.colors.ui.quaternary};
   margin-left: 10px;
+=======
+  padding-bottom: 5px;
+  color: ${(props) => props.theme.colors.ui.tertiary};
+  text-align: center;
+>>>>>>> 92cfa2ce15e3f8b709a45764aac3549e81e3cc1b
   font-weight: 700;
   font-size: 20px;
 `;
@@ -21,7 +27,7 @@ const RestautantCardCover = styled(Card.Cover)`
 
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
-    name = "Vips",
+    name = "vips",
     icon,
     photos = [
       "https://www.foodiesfeed.com/wp-content/uploads/2019/06/beautiful-vibrant-shot-of-traditional-korean-meals.jpg",
