@@ -1,39 +1,30 @@
-import React, { useContext, useState } from "react";
-import { SafeAreaView, StyleSheet, View, Text } from "react-native";
+import React from "react";
+import { SafeAreaView, StatusBar, StyleSheet, View } from "react-native";
 import { Searchbar } from "react-native-paper";
-import { StatusBar as StatusBar } from "expo-status-bar";
+import styled from "styled-components/native";
 
 import { RestaurantInfoCard } from "../components/restaurant-info-card.components";
 
+const Container = styled(SafeAreaView)`
+  flex: 1;
+  //Next line is to skip the the android statusbar area, the option for IOS is already in SafeAreaView
+  ${StatusBar.currentHeight && `margin-top: ${StatusBar.currentHeight}px`};
+  background-color: #fada63;
+`;
+const ViewSearch = styled.View`
+  background-color: #fcb32b;
+  padding: 10px;
+`;
+
 export const RestaurantsScreen = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <View style={styles.search}>
+    <Container>
+      <ViewSearch>
         <Searchbar />
-      </View>
-      <View style={styles.list}>
+      </ViewSearch>
+      <View>
         <RestaurantInfoCard />
       </View>
-    </SafeAreaView>
+    </Container>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    // The next code line only applies to android
-    // For IOS status bar offset SafeAreaView is used
-    marginTop: StatusBar.currentHeight,
-    flex: 1,
-  },
-  search: {
-    backgroundColor: "#FCB32B",
-    padding: 10,
-  },
-  searchText: {},
-  list: {
-    flex: 1,
-    backgroundColor: "#FADD91",
-    padding: 10,
-  },
-  listText: {},
-});

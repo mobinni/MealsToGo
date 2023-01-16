@@ -11,9 +11,11 @@ const Title = styled.Text`
   font-size: 20px;
 `;
 const RestaurantCard = styled(Card)`
+  margin: 5px 10px;
   background: red;
 `;
 const RestautantCardCover = styled(Card.Cover)`
+  padding: 4px;
   background-color: transparent;
 `;
 
@@ -32,7 +34,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
 
   return (
     <RestaurantCard elevation={5}>
-      <Card.Cover key={name} source={{ uri: photos[0] }} />
+      <RestautantCardCover key={name} source={{ uri: photos[0] }} />
       <Title>{name}</Title>
     </RestaurantCard>
   );
