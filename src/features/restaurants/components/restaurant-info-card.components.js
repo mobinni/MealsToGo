@@ -3,6 +3,7 @@ import { Card, Text } from "react-native-paper";
 import styled from "styled-components/native";
 
 const Title = styled.Text`
+  font-family: ${(props) => props.theme.fonts.heading};
   padding-left: 2px;
 <<<<<<< HEAD
   padding-bottom: 2px;
