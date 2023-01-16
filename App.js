@@ -7,16 +7,17 @@ import {
   useFonts as useOswald,
   Oswald_400Regular,
 } from "@expo-google-fonts/oswald";
-import { useFonts as useLato, Lato_400Regular } from "@expo-google-fonts/lato";
+import { useFonts as useLato, Lato_400Regular, Lato_900Black} from "@expo-google-fonts/lato";
 
 import { theme } from "./src/infrastructure/theme";
 
 export default function App() {
   const [oswaldLoaded] = useOswald({
-    Oswald_400Regular,
+    Oswald_400Regular
   });
   const [latoLoaded] = useLato({
     Lato_400Regular,
+    Lato_900Black
   });
   if (!oswaldLoaded || !latoLoaded) {
     return null;
