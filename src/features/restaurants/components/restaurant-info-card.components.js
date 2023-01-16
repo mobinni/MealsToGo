@@ -5,14 +5,14 @@ import styled from "styled-components/native";
 const Title = styled.Text`
   padding-left: 2px;
   padding-bottom: 2px;
-  color: white;
+  color: ${(props) => props.theme.colors.ui.quaternary};
   margin-left: 10px;
   font-weight: 700;
   font-size: 20px;
 `;
 const RestaurantCard = styled(Card)`
   margin: 5px 10px;
-  background: red;
+  background: ${(props) => props.theme.colors.bg.primary};
 `;
 const RestautantCardCover = styled(Card.Cover)`
   padding: 4px;
