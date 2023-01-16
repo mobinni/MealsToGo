@@ -4,9 +4,9 @@ import styled from "styled-components/native";
 
 const Title = styled.Text`
   padding-left: 2px;
-  padding-bottom: 2px;
-  color: white;
-  margin-left: 10px;
+  padding-bottom: 5px;
+  color: ${(props) => props.theme.colors.ui.tertiary};
+  text-align: center;
   font-weight: 700;
   font-size: 20px;
 `;
@@ -21,7 +21,7 @@ const RestautantCardCover = styled(Card.Cover)`
 
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
-    name = "Vips",
+    name = "vips",
     icon,
     photos = [
       "https://www.foodiesfeed.com/wp-content/uploads/2019/06/beautiful-vibrant-shot-of-traditional-korean-meals.jpg",
