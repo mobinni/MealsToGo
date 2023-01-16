@@ -5,15 +5,9 @@ import styled from "styled-components/native";
 const Title = styled.Text`
   font-family: ${(props) => props.theme.fonts.heading};
   padding-left: 2px;
-<<<<<<< HEAD
   padding-bottom: 2px;
   color: ${(props) => props.theme.colors.ui.quaternary};
   margin-left: 10px;
-=======
-  padding-bottom: 5px;
-  color: ${(props) => props.theme.colors.ui.tertiary};
-  text-align: center;
->>>>>>> 92cfa2ce15e3f8b709a45764aac3549e81e3cc1b
   font-weight: 700;
   font-size: 20px;
 `;
