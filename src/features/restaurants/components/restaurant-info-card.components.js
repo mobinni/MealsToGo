@@ -9,16 +9,15 @@ const Info = styled(Text)`
   padding-bottom: ${(props) => props.theme.space[1]};
 `;
 const Title = styled.Text`
-  padding: ${(props) => props.theme.space[1]};
-  margin-right: ${(props) => props.theme.space[1]};
   font-family: ${(props) => props.theme.fonts.title};
   font-size: ${(props) => props.theme.fontSizes.h5};
   color: ${(props) => props.theme.colors.ui.quaternary};
 `;
 const Rating = styled.Text`
-  text-shadow: 2px 2px white;
-  font-size: ${(props) => props.theme.fontSizes.h5};
+  text-shadow: 1px 1px white;
+  font-size: ${(props) => props.theme.fontSizes.caption};
   color: ${(props) => props.theme.colors.ui.quaternary};
+  flex-direction: row;
 `;
 const Address = styled(Text)`
   font-family: ${(props) => props.theme.fonts.title};
@@ -44,16 +43,22 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
     ],
     address = "1 Apple Way, San Frisco, CA",
     isOpenNow = true,
-    rating = 4,
+    rating = 5,
     isClosedTemporarily = false,
   } = restaurant;
+
+  const ratingArray =Array.from(new Array(Math.floor(rating)));
 
   return (
     <RestaurantCard elevation={5}>
       <RestautantCardCover key={name} source={{ uri: photos[0] }} />
       <Info>
         <Title>{name}</Title>
-        <Rating>{star}{star}{star}{star}</Rating>
+        <Rating>
+          {ratingArray.map(() => (
+            star
+          ))}
+        </Rating>
         <Address>{'\n'}{address}</Address>
       </Info>
     </RestaurantCard>
