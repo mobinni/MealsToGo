@@ -13,11 +13,12 @@ const Info = styled.View`
 const Title = styled.Text`
   font-family: ${(props) => props.theme.fonts.title};
   font-size: ${(props) => props.theme.fontSizes.h5};
-  color: ${(props) => props.theme.colors.ui.quaternary};
+  color: ${(props) => props.theme.colors.text.primary};
 `;
 const Section = styled.View`
   flex-direction: row;
   align-items: center;
+  padding: 5px 0;
 `;
 const SectionEnd = styled.View`
   flex: 1;
@@ -25,7 +26,7 @@ const SectionEnd = styled.View`
   justify-content: flex-end;
 `;
 const Rating = styled.Text`
-  text-shadow: 1px 1px ${(props) => props.theme.colors.text.secondary};
+  text-shadow: 2px 1px ${(props) => props.theme.colors.text.secondary};
   font-size: ${(props) => props.theme.fontSizes.caption};
   color: ${(props) => props.theme.colors.ui.quaternary};
   flex-direction: row;
@@ -38,7 +39,8 @@ const Address = styled(Text)`
 `;
 const RestaurantCard = styled(Card)`
   margin: 5px 10px;
-  background: ${(props) => props.theme.colors.bg.primary};
+  background-color: ${(props) => props.theme.colors.ui.quaternary};
+  
 `;
 const RestautantCardCover = styled(Card.Cover)`
   padding: 4px;
@@ -55,7 +57,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
     address = "1 Apple Way, San Frisco, CA",
     isOpenNow = true,
     rating = 5,
-    isClosedTemporarily = true,
+    isClosedTemporarily = false,
   } = restaurant;
 
   const ratingArray = Array.from(new Array(Math.floor(rating)));
@@ -71,13 +73,14 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
             {isClosedTemporarily && (
               <Text
                 variant="label"
-                style={{ color: "red", backgroundColor: "white" }}
+                style={{ color: "red"}}
               >
                 CLOSED TEMPORARILY
               </Text>
             )}
-            <View style={{ paddingLeft: 16 }} />
+            <View style={{ paddingLeft: 10 }} />
             {isOpenNow && <Text>{open}</Text>}
+            <View style={{ paddingLeft: 10 }} />
             <Text>{icon}</Text>
           </SectionEnd>
         </Section>
