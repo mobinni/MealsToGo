@@ -5,12 +5,8 @@ import styled from "styled-components/native";
 import { Spacer } from "../../../components/spacer/spacer.component";
 
 import { RestaurantInfoCard } from "../components/restaurant-info-card.components";
+import { SafeArea } from "../../../components/utility/safe-area.component";
 
-//${StatusBar... line is to skip the the android statusbar area, the option for IOS is already in SafeAreaView
-const SafeArea = styled(SafeAreaView)`
-  ${StatusBar.currentHeight && `margin-top: ${StatusBar.currentHeight}px`};
-  background-color: ${(props) => props.theme.colors.bg.primary};
-`;
 const SearchContainer = styled.View`
   background-color: #fcb32b;
   padding: ${(props) => props.theme.space[3]};
@@ -23,7 +19,16 @@ export const RestaurantsScreen = () => {
         <Searchbar />
       </SearchContainer>
       <FlatList
-        data={[ {name: 1}, {name: 2},{name: 3}, {name: 4},{name: 5}, {name: 6},{name: 7}, {name: 8},]}
+        data={[
+          { name: 1 },
+          { name: 2 },
+          { name: 3 },
+          { name: 4 },
+          { name: 5 },
+          { name: 6 },
+          { name: 7 },
+          { name: 8 },
+        ]}
         renderItem={() => (
           <Spacer position="bottom" size="small">
             <RestaurantInfoCard />

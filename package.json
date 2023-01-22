@@ -45,7 +45,7 @@
     "@babel/plugin-proposal-unicode-property-regex": "^7.18.6",
     "@react-native-community/eslint-config": "^2.0.0",
     "eslint": "^7.16.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.5.1"
   },
   "private": true
 }
