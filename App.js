@@ -2,6 +2,7 @@
 import { RestaurantsScreen } from "./src/features/restaurants/screens/restaurants.screen";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import { ThemeProvider } from "styled-components/native";
+import 
 
 import {
   useFonts as useOswald,

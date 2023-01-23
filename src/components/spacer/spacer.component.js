@@ -31,9 +31,7 @@ const SpacerView = styled.View`
 export const Spacer = ({ position, size, children }) => {
   const theme = useTheme();
   const variant = getVariant(position, size, theme);
-  return <SpacerView variant={variant}>{children}</SpacerView>;
-};
-
+  return <SpacerView variant={variant}>{chb
 Spacer.defaultProps = {
   position: "top",
   size: "small",
