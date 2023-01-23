@@ -1,23 +1,15 @@
 import React from "react";
-import { SafeAreaView, StatusBar } from "react-native";
+import { SafeAreaView, StatusBar, FlatList } from "react-native";
 import { Searchbar } from "react-native-paper";
 import styled from "styled-components/native";
+import { Spacer } from "../../../components/spacer/spacer.component";
 
 import { RestaurantInfoCard } from "../components/restaurant-info-card.components";
+import { SafeArea } from "../../../components/utility/safe-area.component";
 
-const SafeArea = styled(SafeAreaView)`
-  flex: 1;
-  //Next line is to skip the the android statusbar area, the option for IOS is already in SafeAreaView
-  ${StatusBar.currentHeight && `margin-top: ${StatusBar.currentHeight}px`};
-  background-color: ${(props) => props.theme.colors.ui.tertiary};
-`;
 const SearchContainer = styled.View`
   background-color: #fcb32b;
   padding: ${(props) => props.theme.space[3]};
-`;
-const RestaurantListContainer = styled.View`
-  flex: 1;
-  background-color: ${(props) => props.theme.colors.ui.primary};
 `;
 
 export const RestaurantsScreen = () => {
@@ -26,9 +18,25 @@ export const RestaurantsScreen = () => {
       <SearchContainer>
         <Searchbar />
       </SearchContainer>
-      <RestaurantListContainer>
-        <RestaurantInfoCard />
-      </RestaurantListContainer>
+      <FlatList
+        data={[
+          { name: 1 },
+          { name: 2 },
+          { name: 3 },
+          { name: 4 },
+          { name: 5 },
+          { name: 6 },
+          { name: 7 },
+          { name: 8 },
+        ]}
+        renderItem={() => (
+          <Spacer position="bottom" size="small">
+            <RestaurantInfoCard />
+          </Spacer>
+        )}
+        keyExtractor={(item) => item.name}
+        contentContainerStyle={{ padding: 4 }}
+      />
     </SafeArea>
   );
 };

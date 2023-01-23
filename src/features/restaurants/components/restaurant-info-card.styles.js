@@ -5,38 +5,37 @@ export const Icon = styled.Image`
   width: 15px;
   height: 15px;
 `;
-
-export const RestaurantCard = styled(Card)`
-  background-color: ${(props) => props.theme.colors.bg.primary};
-  width: 95%;
-  align-self: center;
+export const Info = styled.View`cc
+  flex-direction: column;
+  padding: 0 ${(props) => props.theme.space[4]};
+  padding-bottom: ${(props) => props.theme.space[1]};
 `;
-
-export const RestaurantCardCover = styled(Card.Cover)`
-  padding: ${(props) => props.theme.space[3]};
-  background-color: ${(props) => props.theme.colors.bg.primary};
-`;
-
-export const Address = styled.Text`
-  font-family: ${(props) => props.theme.fonts.body};
+export const Rating = styled.Text`
+  text-shadow: 1px 1px ${(props) => props.theme.colors.text.secondary};
   font-size: ${(props) => props.theme.fontSizes.caption};
-`;
-
-export const Info = styled.View`
-  padding: ${(props) => props.theme.space[3]};
-`;
-
-export const Rating = styled.View`
+  color: ${(props) => props.theme.colors.ui.quaternary};
   flex-direction: row;
-  padding-top: ${(props) => props.theme.space[2]};
-  padding-bottom: ${(props) => props.theme.space[2]};
 `;
-
+export const Address = styled.Text`
+  font-family: ${(props) => props.theme.fonts.title};
+  font-size: ${(props) => props.theme.fontSizes.button};
+  color: ${(props) => props.theme.colors.text.primary};
+  padding-top: ${(props) => props.theme.space[1]};
+`;
+export const RestaurantCard = styled(Card)`
+  margin: 5px 10px;
+  background-color: ${(props) => props.theme.colors.ui.quaternary};
+  margin-bottom: ${(props) => props.theme.space[1]};
+  `;
+export const RestautantCardCover = styled(Card.Cover)`
+  padding: 4px;
+  background-color: transparent;
+`;
 export const Section = styled.View`
   flex-direction: row;
   align-items: center;
+  padding: 5px 0;
 `;
-
 export const SectionEnd = styled.View`
   flex: 1;
   flex-direction: row;

@@ -14,8 +14,8 @@
     "@expo-google-fonts/oswald": "^0.2.2",
     "@react-native-async-storage/async-storage": "~1.17.3",
     "@react-native-masked-view/masked-view": "0.2.8",
-    "@react-navigation/bottom-tabs": "^6.4.3",
-    "@react-navigation/native": "^6.0.16",
+    "@react-navigation/bottom-tabs": "^6.5.3",
+    "@react-navigation/native": "^6.1.2",
     "@react-navigation/stack": "^6.3.7",
     "camelize": "^1.0.0",
     "deprecated-react-native-prop-types": "^3.0.1",
@@ -45,7 +45,7 @@
     "@babel/plugin-proposal-unicode-property-regex": "^7.18.6",
     "@react-native-community/eslint-config": "^2.0.0",
     "eslint": "^7.16.0",
-    "prettier": "^2.2.1"
+    "prettier": "^2.5.1"
   },
   "private": true
 }
