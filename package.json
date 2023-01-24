@@ -17,7 +17,7 @@
     "@react-navigation/bottom-tabs": "^6.5.3",
     "@react-navigation/native": "^6.1.2",
     "@react-navigation/stack": "^6.3.7",
-    "camelize": "^1.0.0",
+    "camelize": "^1.0.1",
     "deprecated-react-native-prop-types": "^3.0.1",
     "expo": "^47.0.13",
     "expo-font": "~11.0.1",
