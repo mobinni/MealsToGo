@@ -1,10 +1,9 @@
 /* eslint-disable react/react-in-jsx-scope */
-import { RestaurantsScreen } from "./src/features/restaurants/screens/restaurants.screen";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import { ThemeProvider } from "styled-components/native";
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { View, Text } from "react-native";
+import { Text } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 
 import {
@@ -18,14 +17,9 @@ import {
 } from "@expo-google-fonts/lato";
 import { theme } from "./src/infrastructure/theme";
 import { SafeArea } from "./src/components/utility/safe-area.component";
-//use this
-const Tab = createBottomTabNavigator();
+import { RestaurantsScreen } from "./src/features/restaurants/screens/restaurants.screen";
 
-const TAB_ICON = {
-  Restaurants: "restaurant",
-  Map: "map",
-  Settings: "list",
-};
+const Tab = createBottomTabNavigator();
 
 const Map = () => (
   <SafeArea>
@@ -37,6 +31,12 @@ const Settings = () => (
     <Text>Settings</Text>
   </SafeArea>
 );
+
+const TAB_ICON = {
+  Restaurants: "restaurant",
+  Map: "map",
+  Settings: "list",
+};
 
 const createScreenOptions = ({ route }) => {
   const iconName = TAB_ICON[route.name];
