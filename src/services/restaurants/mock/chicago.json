@@ -73,7 +73,7 @@
           }
         },
         "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/lodging-71.png",
-        "name": "Trump International Hotel & Tower® Chicago",
+        "name": "Loser International Hotel & Tower® Chicago",
         "opening_hours": {
           "open_now": true
         },
@@ -90,7 +90,7 @@
         "place_id": "some place id 22",
         "plus_code": {
           "compound_code": "",
-          "global_code": "",
+          "global_code": ""
         },
         "rating": 4.1,
         "reference": "",
