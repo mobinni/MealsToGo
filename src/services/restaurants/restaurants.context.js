@@ -8,10 +8,14 @@ import {
 export const RestaurantsContext = createContext();
 
 export const RestaurantsContextProvider = ({ children }) => {
+  const [restaurants, setRestaurants] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+
   return (
     <RestaurantsContext.Provider
       value={{
-        restaurants: [],
+        restaurants: [1, 2, 3, 4, 5],
       }}
     >
       {children}

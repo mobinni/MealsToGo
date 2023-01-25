@@ -5,7 +5,7 @@ import styled from "styled-components/native";
 
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { Text } from "../../../components/typography/text.component";
-import { 
+import {
   RestaurantCard,
   RestautantCardCover,
   Info,
@@ -42,15 +42,13 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
           <Rating>{ratingArray.map(() => star)}</Rating>
           <SectionEnd>
             {isClosedTemporarily && (
-              <Text variant="error">
-                CLOSED TEMPORARILY
-              </Text>
+              <Text variant="error">CLOSED TEMPORARILY</Text>
             )}
             <Spacer position="left" size="small">
-            {isOpenNow && <Text>{open}</Text>}
+              {isOpenNow && <Text>{open}</Text>}
             </Spacer>
             <Spacer position="left" size="small">
-            <Text>{icon}</Text>
+              <Text>{icon}</Text>
             </Spacer>
           </SectionEnd>
         </Section>

@@ -15,6 +15,7 @@ const SearchContainer = styled.View`
 
 export const RestaurantsScreen = () => {
   const restaurantContext = useContext(RestaurantsContext);
+  console.log(restaurantContext);
   return (
     <SafeArea>
       <SearchContainer>
