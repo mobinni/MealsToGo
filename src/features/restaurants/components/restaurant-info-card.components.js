@@ -20,7 +20,7 @@ const open = "🈺";
 
 export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
-    name = "La casa del pollo",
+    name = "Los pollos hermanos",
     icon = "🍔",
     photos = [
       "https://www.foodiesfeed.com/wp-content/uploads/2019/06/beautiful-vibrant-shot-of-traditional-korean-meals.jpg",
