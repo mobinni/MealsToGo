@@ -3,7 +3,7 @@ import { host, isMock } from "../../utils/env";
 
 import { mocks } from "./mock";
 
-export const restaurantsRequest = (location = "crap") => {
+export const restaurantsRequest = (location = "37.7749295,-122.4194155") => {
   return new Promise((resolve, reject) => {
     const mock = mocks[location];
     if (!mock) {
@@ -14,7 +14,7 @@ export const restaurantsRequest = (location = "crap") => {
 };
 restaurantsRequest()
   .then((result) => {
-    console.log(result);
+    //console.log(result);
   })
   .catch((err) => {
     console.log(err);

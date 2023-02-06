@@ -22,9 +22,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
   const {
     name = "Los pollos hermanos",
     icon = "🍔",
-    photos = [
-      "https://www.foodiesfeed.com/wp-content/uploads/2019/06/beautiful-vibrant-shot-of-traditional-korean-meals.jpg",
-    ],
+    photos = [],
     address = "1 Apple Way, San Frisco, CA",
     isOpenNow = true,
     rating = 5,
