@@ -34,8 +34,7 @@ export const RestaurantsContextProvider = ({ children }) => {
   };
   useEffect(() => {
     retrieveRestaurants();
-  }),
-    []; // use the empty array so its not reloading all the time
+  }, []); // use the empty array so its not reloading all the time
 
   return (
     <RestaurantsContext.Provider

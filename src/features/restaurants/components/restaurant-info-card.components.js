@@ -46,7 +46,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
               {isOpenNow && <Text>{open}</Text>}
             </Spacer>
             <Spacer position="left" size="small">
-              <Text>{icon}</Text>
+              <Text>{}</Text>
             </Spacer>
           </SectionEnd>
         </Section>
