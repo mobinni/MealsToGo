@@ -1,11 +1,9 @@
-import React, { useState, useContext, createContext, useEffect } from "react";
+import React, { useState, createContext, useEffect, useMemo } from "react";
 
 import {
   restaurantsRequest,
   restaurantsTransform,
 } from "./restaurants.service";
-
-import { LocationContext } from "../location/location.context";
 
 export const RestaurantsContext = createContext();
 
@@ -13,31 +11,30 @@ export const RestaurantsContextProvider = ({ children }) => {
   const [restaurants, setRestaurants] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  const { location } = useContext(LocationContext);
 
-  const retrieveRestaurants = (loc) => {
+  //useEffect acts when something mounts or changes
+  useEffect(() => {
+    retrieveRestaurants();
+  }, []); //use the [] so is not triggering all the time
+
+  const retrieveRestaurants = () => {
     setIsLoading(true);
-    setRestaurants([]);
-
-    restaurantsRequest(loc)
-      .then(restaurantsTransform)
-      .then((results) => {
-        setError(null);
-        setIsLoading(false);
-        setRestaurants(results);
-      })
-      .catch((err) => {
-        setRestaurants([]);
-        setIsLoading(false);
-        setError(err);
-      });
+    setTimeout(() => {
+      restaurantsRequest()
+        .then(restaurantsTransform)
+        .then((results) => {
+          setIsLoading(false);
+          setRestaurants(results);
+        })
+        .catch((err) => {
+          setIsLoading(false);
+          setError(err);
+        });
+    }, 2000);
   };
   useEffect(() => {
-    if (location) {
-      const locationString = `${location.lat},${location.lng}`;
-      retrieveRestaurants(locationString);
-    }
-  }, [location]);
+    retrieveRestaurants();
+  }, []); // use the empty array so its not reloading all the time
 
   return (
     <RestaurantsContext.Provider
