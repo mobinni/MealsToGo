@@ -9,13 +9,14 @@
     "logs": "firebase functions:log"
   },
   "engines": {
-    "node": "14"
+    "node": "16"
   },
   "main": "index.js",
   "dependencies": {
     "@googlemaps/google-maps-services-js": "^3.1.13",
     "firebase-admin": "^9.2.0",
     "firebase-functions": "^3.11.0",
+    "firebase-tools": "^12.4.8",
     "stripe": "^8.131.1"
   },
   "devDependencies": {
