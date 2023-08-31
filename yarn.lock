@@ -1500,10 +1500,10 @@
     "@babel/helper-validator-identifier" "^7.19.1"
     to-fast-properties "^2.0.0"
 
-"@callstack/react-theme-provider@^3.0.7":
-  version "3.0.8"
-  resolved "https://registry.yarnpkg.com/@callstack/react-theme-provider/-/react-theme-provider-3.0.8.tgz#d0d7ac71e422133c5f7b78f4c4aa1bc57f156f50"
-  integrity sha512-5U231sYY2sqQOaELX0WBCn+iluV8bFaXIS7em03k4W5Xz0AhGvKlnpLIhDGFP8im/SvNW7/2XoR0BsClhn9t6Q==
+"@callstack/react-theme-provider@^3.0.9":
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/@callstack/react-theme-provider/-/react-theme-provider-3.0.9.tgz#01035fa1231f1fffc1a806be1b55eb82716e80c1"
+  integrity sha512-tTQ0uDSCL0ypeMa8T/E9wAZRGKWj8kXP7+6RYgPTfOPs9N07C9xM8P02GJ3feETap4Ux5S69D9nteq9mEj86NA==
   dependencies:
     deepmerge "^3.2.0"
     hoist-non-react-statics "^3.3.0"
@@ -7157,9 +7157,9 @@ react-native-codegen@^0.70.6:
     jscodeshift "^0.13.1"
     nullthrows "^1.1.1"
 
-"react-native-credit-card-input@github:mobinni/react-native-credit-card-input#master":
-  version "0.4.1"
-  resolved "https://codeload.github.com/mobinni/react-native-credit-card-input/tar.gz/c8b667e05a523fd8ad99aa0a174401221d3cd927"
+react-native-credit-card-input@mobinni/react-native-credit-card-input#master:
+  version "0.5.3"
+  resolved "https://codeload.github.com/mobinni/react-native-credit-card-input/tar.gz/ab2e430572b4c0c494ebe4b79660b0bd8fb4df67"
   dependencies:
     card-validator "^3.0.0"
     deprecated-react-native-prop-types "^2.3.0"
@@ -7192,10 +7192,6 @@ react-native-gradle-plugin@^0.70.3:
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.70.3.tgz#cbcf0619cbfbddaa9128701aa2d7b4145f9c4fc8"
   integrity sha512-oOanj84fJEXUg9FoEAQomA8ISG+DVIrTZ3qF7m69VQUJyOGYyDZmPqKcjvRku4KXlEH6hWO9i4ACLzNBh8gC0A==
 
-react-native-iphone-x-helper@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.3.1.tgz#20c603e9a0e765fd6f97396638bdeb0e5a60b010"
-
 react-native-maps@1.3.2:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/react-native-maps/-/react-native-maps-1.3.2.tgz#8e30bfd9d934de02827253e5cde6c08a04f6356c"
@@ -7203,14 +7199,14 @@ react-native-maps@1.3.2:
   dependencies:
     "@types/geojson" "^7946.0.8"
 
-react-native-paper@^4.12.5:
-  version "4.12.5"
-  resolved "https://registry.yarnpkg.com/react-native-paper/-/react-native-paper-4.12.5.tgz#5ea4bbe02d416d17802a199de748700358c11d3a"
-  integrity sha512-gdUtJJf0bw/0xoCE1jR6qCQiQCQZ9ivZh0lbPghFFaGxX88WtTQpusnGON8WhLPeH5odEQ4dTBu99lnIQvSFow==
+react-native-paper@^5.10.3:
+  version "5.10.3"
+  resolved "https://registry.yarnpkg.com/react-native-paper/-/react-native-paper-5.10.3.tgz#75f5dafc71e0f0072877fcb24aa877bd1ec7d22b"
+  integrity sha512-UXT+cOnycpepAhE1t7E4PqFk5mSLtCA5BSQkt6xGi7XJxnpBF3v4orcHwG/OQEOWx7TpWKGPCjhDewnZodOl5Q==
   dependencies:
-    "@callstack/react-theme-provider" "^3.0.7"
+    "@callstack/react-theme-provider" "^3.0.9"
     color "^3.1.2"
-    react-native-iphone-x-helper "^1.3.1"
+    use-latest-callback "^0.1.5"
 
 react-native-reanimated@~2.12.0:
   version "2.12.0"
@@ -7225,10 +7221,10 @@ react-native-reanimated@~2.12.0:
     setimmediate "^1.0.5"
     string-hash-64 "^1.0.3"
 
-react-native-safe-area-context@4.4.1:
-  version "4.4.1"
-  resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-4.4.1.tgz#239c60b8a9a80eac70a38a822b04c0f1d15ffc01"
-  integrity sha512-N9XTjiuD73ZpVlejHrUWIFZc+6Z14co1K/p1IFMkImU7+avD69F3y+lhkqA2hN/+vljdZrBSiOwXPkuo43nFQA==
+react-native-safe-area-context@^4.7.1:
+  version "4.7.1"
+  resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-4.7.1.tgz#b7be2d68dee909717cfa439bb5c7966042d231e8"
+  integrity sha512-X2pJG2ttmAbiGlItWedvDkZg1T1ikmEDiz+7HsiIwAIm2UbFqlhqn+B1JF53mSxPzdNaDcCQVHRNPvj8oFu6Yg==
 
 react-native-safe-modules@^1.0.3:
   version "1.0.3"

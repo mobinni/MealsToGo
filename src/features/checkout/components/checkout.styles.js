@@ -4,7 +4,6 @@ import {
   TextInput,
   ActivityIndicator,
   Button,
-  Colors,
 } from "react-native-paper";
 import { colors } from "../../../infrastructure/theme/colors";
 
@@ -17,7 +16,7 @@ export const CartIconContainer = styled.View`
 export const PaymentProcessing = styled(ActivityIndicator).attrs({
   size: 128,
   animating: true,
-  color: Colors.blue300,
+  color: colors.brand.primary,
 })`
   position: absolute;
   top: 50%;
