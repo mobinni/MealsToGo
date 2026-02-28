@@ -23,7 +23,11 @@ const firebaseConfig = {
   appId: "<fill in your own>",
 };
 
-initializeApp(firebaseConfig);
+export const isMockMode = firebaseConfig.apiKey.startsWith("<");
+
+if (!isMockMode) {
+  initializeApp(firebaseConfig);
+}
 
 export default function App() {
   const [oswaldLoaded] = useOswald({

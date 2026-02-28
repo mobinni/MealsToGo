@@ -7,25 +7,31 @@ import {
 } from "firebase/auth";
 
 import { loginRequest } from "./authentication.service";
+import { isMockMode } from "../../../App";
 
 export const AuthenticationContext = createContext();
 
+const MOCK_USER = { uid: "mock", email: "mock@dev.com" };
+
 export const AuthenticationContextProvider = ({ children }) => {
   const [isLoading, setIsLoading] = useState(false);
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(isMockMode ? MOCK_USER : null);
   const [error, setError] = useState(null);
-  const auth = useRef(getAuth()).current;
+  const auth = useRef(isMockMode ? null : getAuth()).current;
 
-  onAuthStateChanged(auth, (usr) => {
-    if (usr) {
-      setUser(usr);
-      setIsLoading(false);
-    } else {
-      setIsLoading(false);
-    }
-  });
+  if (auth) {
+    onAuthStateChanged(auth, (usr) => {
+      if (usr) {
+        setUser(usr);
+        setIsLoading(false);
+      } else {
+        setIsLoading(false);
+      }
+    });
+  }
 
   const onLogin = (email, password) => {
+    if (!auth) return setUser(MOCK_USER);
     setIsLoading(true);
     loginRequest(auth, email, password)
       .then((u) => {
@@ -39,6 +45,7 @@ export const AuthenticationContextProvider = ({ children }) => {
   };
 
   const onRegister = (email, password, repeatedPassword) => {
+    if (!auth) return setUser(MOCK_USER);
     setIsLoading(true);
     if (password !== repeatedPassword) {
       setError("Error: Passwords do not match");
@@ -56,6 +63,7 @@ export const AuthenticationContextProvider = ({ children }) => {
   };
 
   const onLogout = () => {
+    if (!auth) return setUser(null);
     signOut(auth).then(() => {
       setUser(null);
       setError(null);
