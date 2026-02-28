@@ -1,7 +1,11 @@
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import React from "react";
+import { LogBox } from "react-native";
+
+LogBox.ignoreLogs(["InteractionManager has been deprecated"]);
 import { ThemeProvider } from "styled-components/native";
 import { initializeApp } from "firebase/app";
+import { firebaseConfig, isMockMode } from "./src/utils/mock-mode";
 
 import {
   useFonts as useOswald,
@@ -13,17 +17,6 @@ import { theme } from "./src/infrastructure/theme";
 import { Navigation } from "./src/infrastructure/navigation";
 
 import { AuthenticationContextProvider } from "./src/services/authentication/authentication.context";
-
-const firebaseConfig = {
-  apiKey: "<fill in your own>",
-  authDomain: "<fill in your own>",
-  projectId: "<fill in your own>",
-  storageBucket: "<fill in your own>",
-  messagingSenderId: "<fill in your own>",
-  appId: "<fill in your own>",
-};
-
-export const isMockMode = firebaseConfig.apiKey.startsWith("<");
 
 if (!isMockMode) {
   initializeApp(firebaseConfig);

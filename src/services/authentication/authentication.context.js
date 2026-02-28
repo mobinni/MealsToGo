@@ -7,7 +7,7 @@ import {
 } from "firebase/auth";
 
 import { loginRequest } from "./authentication.service";
-import { isMockMode } from "../../../App";
+import { isMockMode } from "../../utils/mock-mode";
 
 export const AuthenticationContext = createContext();
 
