@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 
-import { ActivityIndicator, Colors } from "react-native-paper";
+import { ActivityIndicator } from "react-native-paper";
 
 import {
   AccountBackground,
@@ -68,7 +68,7 @@ export const RegisterScreen = ({ navigation }) => {
               Register
             </AuthButton>
           ) : (
-            <ActivityIndicator animating={true} color={Colors.blue300} />
+            <ActivityIndicator animating={true} color="#64B5F6" />
           )}
         </Spacer>
       </AccountContainer>

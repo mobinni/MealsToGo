@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import { ScrollView } from "react-native";
+import { ScrollView, View } from "react-native";
 import { List } from "react-native-paper";
 
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
-
-import { SafeArea } from "../../../components/utility/safe-area.component";
 
 export const RestaurantDetailScreen = ({ route }) => {
   const [breakfastExpanded, setBreakfastExpanded] = useState(false);
@@ -14,7 +12,7 @@ export const RestaurantDetailScreen = ({ route }) => {
 
   const { restaurant } = route.params;
   return (
-    <SafeArea>
+    <View style={{ flex: 1 }}>
       <RestaurantInfoCard restaurant={restaurant} />
       <ScrollView>
         <List.Accordion
@@ -62,6 +60,6 @@ export const RestaurantDetailScreen = ({ route }) => {
           <List.Item title="Fanta" />
         </List.Accordion>
       </ScrollView>
-    </SafeArea>
+    </View>
   );
 };
